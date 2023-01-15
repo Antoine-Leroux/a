@@ -63,109 +63,135 @@
     })
 
     // Stop video when modal close
-    var videoSrc = $("#portfolioModal3 iframe").attr("src");
+    
+    $('#portfolioModal1').on('show.bs.modal', function () { // on opening the modal
+    }).on('hidden.bs.modal', function (e) { // on closing the modal
+    iframe.remove();
+    initYouTubeVideos();
+    });
+
+    $('#portfolioModal2').on('show.bs.modal', function () { // on opening the modal
+    }).on('hidden.bs.modal', function (e) { // on closing the modal
+    iframe.remove();
+    initYouTubeVideos();
+    });
+
     $('#portfolioModal3').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal3 iframe").attr("src", videoSrc+"?autoplay=0");
     }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal3 iframe").attr("src", null);
+    iframe.remove();
+    initYouTubeVideos();
     });
 
-    var videoSrc2 = $("#portfolioModal2 #ytvideo5").attr("src");
-    $('#portfolioModal2').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal2 #ytvideo5").attr("src", videoSrc2+"?autoplay=0");
-    }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal2 #ytvideo5").attr("src", null);
-    });
-
-    var videoSrc3 = $("#portfolioModal1 #ytvideo1").attr("src");
-    $('#portfolioModal1').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal1 #ytvideo1").attr("src", videoSrc3+"?autoplay=0");
-    }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal1 #ytvideo1").attr("src", null);
-    });
-
-    var videoSrc4 = $("#portfolioModal1 #ytvideo2").attr("src");
-    $('#portfolioModal1').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal1 #ytvideo2").attr("src", videoSrc4+"?autoplay=0");
-    }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal1 #ytvideo2").attr("src", null);
-    });
-
-    var videoSrc5 = $("#portfolioModal6 iframe").attr("src");
     $('#portfolioModal6').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal6 iframe").attr("src", videoSrc5+"?autoplay=0");
     }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal6 iframe").attr("src", null);
+    iframe.remove();
+    initYouTubeVideos();
     });
 
-    var videoSrc6 = $("#portfolioModal7 iframe").attr("src");
     $('#portfolioModal7').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal7 iframe").attr("src", videoSrc6+"?autoplay=0");
     }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal7 iframe").attr("src", null);
+    iframe.remove();
+    initYouTubeVideos();
     });
 
-    var videoSrc7 = $("#portfolioModal8 iframe").attr("src");
     $('#portfolioModal8').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal8 iframe").attr("src", videoSrc7+"?autoplay=0");
     }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal8 iframe").attr("src", null);
+    iframe.remove();
+    initYouTubeVideos();
     });
 
-    var videoSrc8 = $("#portfolioModal10 #ytvideo1").attr("src");
     $('#portfolioModal10').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal10 #ytvideo1").attr("src", videoSrc8+"?autoplay=0");
     }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal10 #ytvideo1").attr("src", null);
+    iframe.remove();
+    initYouTubeVideos();
     });
 
-    var videoSrc9 = $("#portfolioModal10 #ytvideo2").attr("src");
-    $('#portfolioModal10').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal10 #ytvideo2").attr("src", videoSrc9+"?autoplay=0");
-    }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal10 #ytvideo2").attr("src", null);
-    });
-
-    var videoSrc10 = $("#portfolioModal12 iframe").attr("src");
-    $('#portfolioModal12').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal12 iframe").attr("src", videoSrc10+"?autoplay=0");
-    }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal12 iframe").attr("src", null);
-    });
-
-    var videoSrc11 = $("#portfolioModal11 iframe").attr("src");
     $('#portfolioModal11').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal11 iframe").attr("src", videoSrc11+"?autoplay=0");
     }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal11 iframe").attr("src", null);
+    iframe.remove();
+    initYouTubeVideos();
     });
 
-    var videoSrc12 = $("#portfolioModal14 #ytvideo3").attr("src");
-    $('#portfolioModal14').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal14 #ytvideo3").attr("src", videoSrc12+"?autoplay=0");
+    $('#portfolioModal12').on('show.bs.modal', function () { // on opening the modal
     }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal14 #ytvideo3").attr("src", null);
+    iframe.remove();
+    initYouTubeVideos();
     });
 
-    var videoSrc13 = $("#portfolioModal14 #ytvideo4").attr("src");
-    $('#portfolioModal14').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal14 #ytvideo4").attr("src", videoSrc13+"?autoplay=0");
-    }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal14 #ytvideo4").attr("src", null);
-    });
-
-    var videoSrc14 = $("#portfolioModal13 #ytvideo5").attr("src");
     $('#portfolioModal13').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal13 #ytvideo5").attr("src", videoSrc14+"?autoplay=0");
     }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal13 #ytvideo5").attr("src", null);
+    iframe.remove();
+    initYouTubeVideos();
     });
 
-    var videoSrc15 = $("#portfolioModal2 #ytvideo6").attr("src");
-    $('#portfolioModal2').on('show.bs.modal', function () { // on opening the modal
-    $("#portfolioModal2 #ytvideo6").attr("src", videoSrc15+"?autoplay=0");
+    $('#portfolioModal14').on('show.bs.modal', function () { // on opening the modal
     }).on('hidden.bs.modal', function (e) { // on closing the modal
-    $("#portfolioModal2 #ytvideo6").attr("src", null);
+    iframe.remove();
+    initYouTubeVideos();
     });
+
+    $('#portfolioModal15').on('show.bs.modal', function () { // on opening the modal
+    }).on('hidden.bs.modal', function (e) { // on closing the modal
+    iframe.remove();
+    initYouTubeVideos();
+    });
+
+    $('#portfolioModal16').on('show.bs.modal', function () { // on opening the modal
+    }).on('hidden.bs.modal', function (e) { // on closing the modal
+    iframe.remove();
+    initYouTubeVideos();
+    });
+
+    $('#portfolioModal17').on('show.bs.modal', function () { // on opening the modal
+    }).on('hidden.bs.modal', function (e) { // on closing the modal
+    iframe.remove();
+    initYouTubeVideos();
+    });
+
+    $('#portfolioModal18').on('show.bs.modal', function () { // on opening the modal
+    }).on('hidden.bs.modal', function (e) { // on closing the modal
+    iframe.remove();
+    initYouTubeVideos();
+    });
+
+    $('#portfolioModal19').on('show.bs.modal', function () { // on opening the modal
+    }).on('hidden.bs.modal', function (e) { // on closing the modal
+    iframe.remove();
+    initYouTubeVideos();
+    });
+
+    var iframe = document.createElement("iframe");
+
+    function labnolIframe(div) {
+
+        iframe.setAttribute("src", "https://www.youtube.com/embed/" + div.dataset.id + "?autoplay=1&rel=0");
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+        div.parentNode.replaceChild(iframe, div);
+    }
+
+    function initYouTubeVideos() {
+        var playerElements = document.getElementsByClassName("youtube-player");
+        for (var n = 0; n < playerElements.length; n++) {
+        var videoId = playerElements[n].dataset.id;
+        var div = document.createElement("div");
+        div.setAttribute("data-id", videoId);
+        var thumbNode = document.createElement("img");
+        thumbNode.src = "https://i.ytimg.com/vi/ID/hqdefault.jpg".replace("ID", videoId);
+        div.appendChild(thumbNode);
+        var playButton = document.createElement("div");
+        playButton.setAttribute("class", "play");
+        div.appendChild(playButton);
+        div.onclick = function () {
+        labnolIframe(this);
+        };
+        playerElements[n].appendChild(div);
+        }
+    }
+
+
+
+document.addEventListener("DOMContentLoaded", initYouTubeVideos);
 
 })(jQuery); // End of use strict

@@ -10648,6 +10648,7 @@ body {
   /*font-weight: bold;*/
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 .portfolio-modal .modal-content p.item-intro {
   font-style: italic;
   margin-bottom: 2rem;
@@ -10670,8 +10671,9 @@ border-top: 1px solid black;
   margin-bottom: 2rem;
 }
 .portfolio-modal .modal-content img {
-  margin-bottom: 0.5rem;
+  /*margin-bottom: 0.5rem;*/
 }
+
 .portfolio-modal .close-modal {
   position: absolute;
   top: 1.5rem;
@@ -10690,6 +10692,41 @@ border-top: 1px solid black;
 }
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
+}
+
+#portfolioModal19 h3, #portfolioModal19 h2 {
+  color: #36ce28;
+}
+#portfolioModal19 .divider-custom-line {
+  background-color: #36ce28;
+}
+
+#portfolioModal18 h3, #portfolioModal18 h2 {
+  color: #e349ec;
+}
+#portfolioModal18 .divider-custom-line {
+  background-color: #e349ec;
+}
+
+#portfolioModal17 h3, #portfolioModal17 h2 {
+  color: #f2d50c;
+}
+#portfolioModal17 .divider-custom-line {
+  background-color: #f2d50c;
+}
+
+#portfolioModal16 h3, #portfolioModal16 h2 {
+  color: #ff9cb3;
+}
+#portfolioModal16 .divider-custom-line {
+  background-color: #ff9cb3;
+}
+
+#portfolioModal15 h3, #portfolioModal15 h2 {
+  color: #ff9cb3;
+}
+#portfolioModal15 .divider-custom-line {
+  background-color: #ff9cb3;
 }
 
 #portfolioModal14 h3, #portfolioModal14 h2 {
@@ -10788,4 +10825,60 @@ border-top: 1px solid black;
 }
 #portfolioModal1 .divider-custom-line {
   background-color: #1c2955;
+}
+
+.youtube-player {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: transparent;
+}
+
+.youtube-player img {
+  object-fit: cover;
+  display: block;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.youtube-player img:hover {
+  -webkit-filter: brightness(75%);
+  -moz-filter: brightness(75%);
+  filter: brightness(75%);
+}
+
+.youtube-player .play {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url("https://i.imgur.com/TxzC70f.png") no-repeat;
+  cursor: pointer;
 }
